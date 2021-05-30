@@ -1,0 +1,64 @@
+body {
+  background-image: linear-gradient(black, gray);
+}
+
+
+/* Image */
+img {
+  margin: 0rem 1rem 0rem 0rem;
+  padding: 2px;
+
+  width: 150px;
+  background-color: lightblue;
+}
+
+
+/* Heading */
+h1 {
+  color: skyblue;
+  text-align: center;
+  font-weight: bolder;
+  font-family: monospace;
+  font-size: 60px;
+}
+
+p {
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: underline;
+  color: burlywood;
+}
+
+
+/* Input */
+#translate-txt{
+ border:cadetblue 3px solid;
+ border-radius: 1rem 0rem ;
+ color: crimson;
+ font-weight: bolder;
+ font-size: 15px;
+}
+
+/* Button */
+
+button{
+ margin: 1.5rem;
+ border: solid 0.5px ;
+ border-radius: 5px;
+ background-color: cornflowerblue;
+color:black;
+}
+
+
+
+/* Output */
+#output-txt {
+  border: solid 3px white;
+  width: 45vh;
+  border-radius: 0rem 1rem;
+  padding: 1rem 0rem 1rem 1.5rem;
+  height: 30vh;
+  background-color: cadetblue;
+  font-weight: bolder;
+}
+
