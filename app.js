@@ -9,7 +9,7 @@ var outputTxt = document.querySelector("#output-txt");
 
 
 function getTranslationURL(input){
- return serverURL +"?"+"text="+input;
+ return serverURL +"?"+"text="+ input;
 }
 
 function clickHandle(){
