@@ -1,25 +1,21 @@
-var translateBtn = document.querySelector("#translate-btn");
-var translateTxt=document.querySelector("#translate-txt");
-var outputTxt = document.querySelector("#output-txt");
-
+const inputTxt = document.getElementById('inputTxt')
+const btn = document.getElementById('btn')
+const outputTxt = document.getElementById('outputTxt')
 
 // API
- var serverURL = "https://api.funtranslations.com/translate/morse.json";
+const URL = 'https://api.funtranslations.com/translate/morse.json'
 
+btn.addEventListener('click', translateText)
 
-
-function getTranslationURL(input){
- return serverURL +"?"+"text="+ input;
+function translateText() {
+  let newURL = `${URL}?text=${inputTxt.value}`
+  fetch(newURL)
+    .then((response) => response.json())
+    .then((data) => (outputTxt.innerHTML = data.contents.translated))
+    .catch(errorHandler)
 }
 
-function clickHandle(){
- var inputText=translateTxt.value;
- fetch(getTranslationURL(inputText))
- .then((response) =>response.json())
- .then((json) => {
-  var  translatedTxt=json.contents.translated;
-  outputTxt.innerText=translatedTxt;
- })
+function errorHandler(error) {
+  console.log('error occured', error.message)
+  alert('Please! Try after 1 hour')
 }
-
-translateBtn.addEventListener("click",clickHandle);

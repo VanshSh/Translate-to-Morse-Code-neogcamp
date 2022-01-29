@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/morse-code.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Morse Code Translator</title>
+  </head>
 
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="shortcut icon" type="image/jpg" href="./images/morse-code.png" />
- <title>Morse Code Translator</title>
- <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header>
+      <div class="image-holder">
+        <img
+          class="header-image"
+          src="./images/morse-code.png"
+          alt="Morse Code"
+        />
+      </div>
+      <h1 class="header-title">Morse Code Translator</h1>
+    </header>
 
-<body>
- <!-- Image -->
- <img src="./images/morse-code.png" alt="Instrument">
+    <main>
+      <section class="links">
+        <button>
+          <a
+            href="https://github.com/VanshSh/Translate-to-Morse-Code-neogcamp"
+            target="_blank"
+          >
+            >GitHub Code</a
+          >
+        </button>
+        <button><a href="#">Portfolio</a></button>
+      </section>
 
- <!-- Heading -->
- <h1> -.- Morse Code Translator -.-</h1>
- <p>Translate your sentence to Morse code.</p>
+      <section class="wrapper">
+        <textarea
+          class="textarea"
+          placeholder="Enter your message here..."
+          cols="10"
+          rows="5"
+          id="inputTxt"
+        ></textarea>
+        <button id="btn" class="translate-button">Translate</button>
 
- <!--Input -->
- <textarea id="translate-txt" cols="30" rows="10" placeholder="Enter Your Sentence in English."
-  style="padding: 15px;"></textarea>
+        <article class="output-result">
+          <p id="outputTxt"></p>
+        </article>
+      </section>
+    </main>
 
-
- <!-- Button -->
- <button id="translate-btn">..- Translate -.. </button>
-
-
- <!-- Output -->
- <div id="output-txt"></div>
-
- <script src="app.js" type="text/javascript"></script>
-
-</body>
-
+    <script src="app.js" type="text/javascript"></script>
+  </body>
 </html>

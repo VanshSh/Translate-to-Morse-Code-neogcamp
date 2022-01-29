@@ -1,64 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Lobster&family=Outfit:wght@400;700&display=swap');
 body {
-  background-image: linear-gradient(black, gray);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #475569;
 }
 
-
-/* Image */
-img {
-  margin: 0rem 1rem 0rem 0rem;
-  padding: 2px;
-
-  width: 150px;
-  background-color: lightblue;
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+.header-image {
+  width: 50%;
+  min-width: 100px;
+  max-width: 150px;
+}
 
-/* Heading */
-h1 {
-  color: skyblue;
+.header-title {
+  display: flex;
+  color: #8ec1d6;
+  font-family: 'Fira Sans', cursive;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links button {
+  background-color: #8ec1d6;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 2px 1rem;
+  cursor: pointer;
+}
+
+.links button a {
+  font-size: larger;
+  text-decoration: none;
+  font-weight: bold;
+  color: #475569;
+}
+
+.links button:hover {
+  background-color: rgb(154, 183, 212);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.textarea {
+  width: 50%;
+  border: none;
+  min-width: 200px;
+  font-size: larger;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  padding-top: 2em;
+  font-weight: 600;
   text-align: center;
-  font-weight: bolder;
-  font-family: monospace;
-  font-size: 60px;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  resize: none;
+  background-color: #cbd5e1;
 }
 
-p {
-  font-weight: bolder;
+textarea:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-size: larger;
+  font-family: Fira Sans, cursive;
+
+  color: grey;
   text-align: center;
-  text-decoration: underline;
-  color: burlywood;
 }
 
-
-/* Input */
-#translate-txt{
- border:cadetblue 3px solid;
- border-radius: 1rem 0rem ;
- color: crimson;
- font-weight: bolder;
- font-size: 15px;
-}
-
-/* Button */
-
-button{
- margin: 1.5rem;
- border: solid 0.5px ;
- border-radius: 5px;
- background-color: cornflowerblue;
-color:black;
-}
-
-
-
-/* Output */
-#output-txt {
-  border: solid 3px white;
-  width: 45vh;
-  border-radius: 0rem 1rem;
-  padding: 1rem 0rem 1rem 1.5rem;
-  height: 30vh;
-  background-color: cadetblue;
+.translate-button {
+  background-color: rgb(132, 164, 224);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 1rem;
+  cursor: pointer;
   font-weight: bolder;
+  font-size: larger;
+  color: #32435c;
 }
 
+.translate-button:hover {
+  background-color: #fff;
+  color: #475569;
+}
+
+.output-result {
+  width: 50%;
+  height: 100px;
+  min-width: 200px;
+  font-size: larger;
+  font-family: 'Outfit', sans-serif;
+  color: black;
+  padding: 1rem 0 0 0;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  background-color: #cbd5e1;
+}

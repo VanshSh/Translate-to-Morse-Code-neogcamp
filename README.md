@@ -1,11 +1,30 @@
-# Translate-to-Morse-Code
-Translate your sentence to morse code.
+<div align="center"><h1> -.- Morse Code Translator .-.</h1></div>
 
-## We all have scene spy movies. If one thing that intrigued me was the use of "Morse Code". So if you are like wants to translate your sentence into Morse code.
-Then you are at right place. I have built the morse code translator.
+This App translates the user input into **_Morse code_**.
 
-<img src="https://www.loom.com/i/20b1c20101364f548235d1fbd7d767af"/>
+This app use simple [Fun translation API](https://api.funtranslations.com/) which helps in translating the language.
 
-You can check it out here :point_down:
+## [LIVE APP](https://translatetomorsecode.netlify.app/)
 
-[Morse Code](https://translatetomorsecode.netlify.app/)
+---
+
+![Demo Image](./images/demo.png)
+
+---
+
+<h3> Tech used: </h3>
+1. HTML<br/>
+2. CSS<br/>
+3. JavaScript<br/>
+4. API
+
+---
+
+> NOTE: This API allows only 5 request in an hour.
+
+---
+
+Contact :
+
+- [Twitter](https://twitter.com/Vanshsh2701)
+- [Linkedin](https://www.linkedin.com/in/vanshsharma27/)
